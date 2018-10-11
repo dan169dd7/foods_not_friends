@@ -34,7 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		53F989F8215B275F00C68876 /* hrthrty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hrthrty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53F989F8215B275F00C68876 /* meat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F989FB215B275F00C68876 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53F989FD215B275F00C68876 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		53F98A00215B275F00C68876 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		53F989F9215B275F00C68876 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				53F989F8215B275F00C68876 /* hrthrty.app */,
+				53F989F8215B275F00C68876 /* meat.app */,
 				53F98A0C215B276000C68876 /* hrthrtyTests.xctest */,
 				53F98A17215B276000C68876 /* hrthrtyUITests.xctest */,
 			);
@@ -128,9 +128,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		53F989F7215B275F00C68876 /* hrthrty */ = {
+		53F989F7215B275F00C68876 /* meat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 53F98A20215B276000C68876 /* Build configuration list for PBXNativeTarget "hrthrty" */;
+			buildConfigurationList = 53F98A20215B276000C68876 /* Build configuration list for PBXNativeTarget "meat" */;
 			buildPhases = (
 				53F989F4215B275F00C68876 /* Sources */,
 				53F989F5215B275F00C68876 /* Frameworks */,
@@ -140,9 +140,9 @@
 			);
 			dependencies = (
 			);
-			name = hrthrty;
+			name = meat;
 			productName = hrthrty;
-			productReference = 53F989F8215B275F00C68876 /* hrthrty.app */;
+			productReference = 53F989F8215B275F00C68876 /* meat.app */;
 			productType = "com.apple.product-type.application";
 		};
 		53F98A0B215B276000C68876 /* hrthrtyTests */ = {
@@ -217,7 +217,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				53F989F7215B275F00C68876 /* hrthrty */,
+				53F989F7215B275F00C68876 /* meat */,
 				53F98A0B215B276000C68876 /* hrthrtyTests */,
 				53F98A16215B276000C68876 /* hrthrtyUITests */,
 			);
@@ -282,12 +282,12 @@
 /* Begin PBXTargetDependency section */
 		53F98A0E215B276000C68876 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 53F989F7215B275F00C68876 /* hrthrty */;
+			target = 53F989F7215B275F00C68876 /* meat */;
 			targetProxy = 53F98A0D215B276000C68876 /* PBXContainerItemProxy */;
 		};
 		53F98A19215B276000C68876 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 53F989F7215B275F00C68876 /* hrthrty */;
+			target = 53F989F7215B275F00C68876 /* meat */;
 			targetProxy = 53F98A18215B276000C68876 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -552,7 +552,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		53F98A20215B276000C68876 /* Build configuration list for PBXNativeTarget "hrthrty" */ = {
+		53F98A20215B276000C68876 /* Build configuration list for PBXNativeTarget "meat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				53F98A21215B276000C68876 /* Debug */,

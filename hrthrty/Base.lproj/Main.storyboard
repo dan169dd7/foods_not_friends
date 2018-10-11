@@ -1,24 +1,1116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bg4-R9-17I">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--牛-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="meat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beefbig" translatesAutoresizingMaskIntoConstraints="NO" id="HvI-2d-nRQ">
+                                <rect key="frame" x="-157" y="0.0" width="688" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9SV-ax-cEv">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="Tiy-78-Cp7">
+                                        <rightBarButtonItems>
+                                            <barButtonItem title="更多牛" id="R0v-Ei-AfJ">
+                                                <connections>
+                                                    <segue destination="m2s-u3-zYY" kind="show" id="Vwi-dj-Vxs"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="詳細的牛" id="Ztk-8y-KpB">
+                                                <connections>
+                                                    <segue destination="HcJ-3H-Al2" kind="show" id="vcU-03-x5J"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="牛喜歡被擦肚皮、被搔耳背。牠歡迎友善的人，若你曾對牠不友善，幸好經過時間洗禮，牠可能會原諒你。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eye-tY-QAf">
+                                <rect key="frame" x="87" y="302" width="201" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="牛" id="abs-1l-bug">
+                        <barButtonItem key="rightBarButtonItem" id="HCg-sg-gi2"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="861.60000000000002" y="145.27736131934034"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xQj-ft-6IL">
+            <objects>
+                <viewController id="h5P-ch-o6K" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X46-W4-zhl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beef1" translatesAutoresizingMaskIntoConstraints="NO" id="dk2-5L-MSy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Pk2-DQ-VVJ">
+                                <rect key="frame" x="41" y="197" width="318" height="322"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">取自牛隻的前腰脊肉部位，由於此部位運動量較大，因此肉質較緊實，其油脂含量介於肋眼與菲力之間，大理紋石油花分布均勻。
+
+料理口感：具豐富牛肉風味適合豪邁品嚐，嚼起來富有肉感非常過癮。
+建議熟度︰3至5分熟（不超過7分熟最佳）。</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vBu-Ip-m1f"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JGX-Bi-Yan"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WAS-Y9-CTc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3502" y="-153"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="w3T-fT-si4">
+            <objects>
+                <viewController id="j5n-ur-w3G" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TC5-Oz-kBf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beef 06" translatesAutoresizingMaskIntoConstraints="NO" id="dAh-l3-Boz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DZB-F7-cP8">
+                                <rect key="frame" x="67" y="124" width="240" height="318"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">取自牛的肋脊部位，油脂含量豐富且肉質結實，油紋分布集中且油筋及油脂分布較多，非常適合以炭烤、燒烤的方式料理，將與骨頭連接的筋膜烤得酥脆，是老饕的最愛。
+
+料理口感︰肉質結實，烤後擁有焦脆的筋肉跟特殊嚼勁。
+建議熟度︰7分至全熟。</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="HQS-IJ-N3U"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IB5-ot-8tF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4262" y="-153"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rXP-dH-qcT">
+            <objects>
+                <viewController id="9cw-Sx-yzU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D0S-4e-2Oq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beef08" translatesAutoresizingMaskIntoConstraints="NO" id="kcf-0E-p24">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rfN-Qy-Zci">
+                                <rect key="frame" x="57" y="205" width="261" height="319"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">取自牛隻腰內肉部位，靠近牛脊部位的肉，瘦肉較多、脂肪含量少，每頭上千磅的牛只能切出幾磅的菲力，是牛肉最嫩的部位，製成的牛排通常也較昂貴。
+
+料理口感：甜美多汁，肉質鮮嫩。
+建議熟度︰3分熟。</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qGY-mV-lpW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lZB-wH-2L6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4940" y="-153.37331334332833"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="X45-ki-91D">
+            <objects>
+                <viewController id="sdh-7a-A54" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vxo-1g-3Fp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WMZ-dw-RJp">
+                                <rect key="frame" x="38" y="342" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qNQ-gy-TzM">
+                                <rect key="frame" x="67" y="490" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="PgS-kJ-FTm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k8n-Ut-IdP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4649" y="-892"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="lHL-ve-K7G">
+            <objects>
+                <tableViewController id="m2s-u3-zYY" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="CYo-HX-rBS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="xZh-zU-iwd">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="117" id="zGE-sA-CHe">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="117"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zGE-sA-CHe" id="gyG-QF-6rT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="116.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beef1" translatesAutoresizingMaskIntoConstraints="NO" id="S6W-Sr-xrG">
+                                                    <rect key="frame" x="0.0" y="-13" width="375" height="129"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="紐約客" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCU-r5-xWZ">
+                                                    <rect key="frame" x="246" y="35" width="99" height="46"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="h5P-ch-o6K" kind="show" id="FMA-Vx-Hd2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="117" id="BAp-oI-Tsz">
+                                        <rect key="frame" x="0.0" y="117" width="375" height="117"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BAp-oI-Tsz" id="XuN-Bk-gl4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="116.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="01" translatesAutoresizingMaskIntoConstraints="NO" id="HiN-Z4-0oy">
+                                                    <rect key="frame" x="0.0" y="-41" width="435" height="199"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="肋眼" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Av-dT-db5">
+                                                    <rect key="frame" x="243" y="35" width="102" height="46"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Yfy-Lz-Sd2" kind="show" id="JSY-F1-K1b"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="117" id="IdH-Ot-vfv">
+                                        <rect key="frame" x="0.0" y="234" width="375" height="117"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IdH-Ot-vfv" id="1LO-c2-FcM">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="116.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beef05" translatesAutoresizingMaskIntoConstraints="NO" id="xKE-O0-CRU">
+                                                    <rect key="frame" x="-29" y="0.0" width="432" height="158"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="老饕" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0Oi-Bw-BpL">
+                                                    <rect key="frame" x="246" y="35" width="99" height="46"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="J2i-ds-oFq" kind="show" id="JL6-bs-Ww9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="117" id="b96-CH-Rs2">
+                                        <rect key="frame" x="0.0" y="351" width="375" height="117"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b96-CH-Rs2" id="xZW-XR-CWp">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="116.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beef 06" translatesAutoresizingMaskIntoConstraints="NO" id="x5x-Qw-Ouh">
+                                                    <rect key="frame" x="-187" y="-20" width="749" height="281"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="牛小排" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ceJ-Ql-2Bc">
+                                                    <rect key="frame" x="246" y="35" width="99" height="46"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="j5n-ur-w3G" kind="show" id="ppd-eU-ozk"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="117" id="cwW-PU-gLF">
+                                        <rect key="frame" x="0.0" y="468" width="375" height="117"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cwW-PU-gLF" id="mLU-3k-yX6">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="116.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beef07" translatesAutoresizingMaskIntoConstraints="NO" id="uWb-rp-zrr">
+                                                    <rect key="frame" x="-17" y="0.0" width="522" height="212"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="丁骨" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="e6O-GS-77f">
+                                                    <rect key="frame" x="246" y="35" width="99" height="46"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="0Oz-GZ-3Oy" kind="show" id="9ll-I6-1yd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="117" id="7S9-AS-5dn">
+                                        <rect key="frame" x="0.0" y="585" width="375" height="117"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7S9-AS-5dn" id="Skf-0R-ZlQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="116.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beef08" translatesAutoresizingMaskIntoConstraints="NO" id="4zb-6b-nQP">
+                                                    <rect key="frame" x="-34" y="-28" width="409" height="136"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="菲力" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GVK-xe-PQY">
+                                                    <rect key="frame" x="246" y="35" width="99" height="46"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="9cw-Sx-yzU" kind="show" id="bCA-CH-bqj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="117" id="13F-1D-l9l">
+                                        <rect key="frame" x="0.0" y="702" width="375" height="117"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="13F-1D-l9l" id="fWd-lQ-RXW">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="116.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beef09" translatesAutoresizingMaskIntoConstraints="NO" id="Okk-h4-S2e">
+                                                    <rect key="frame" x="0.0" y="-5" width="375" height="150"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="沙朗" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CfN-Nn-vPA">
+                                                    <rect key="frame" x="241" y="37" width="99" height="46"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="aa1-Ka-wgz" kind="show" id="fAD-B0-N3j"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="m2s-u3-zYY" id="MuC-iU-2Mb"/>
+                            <outlet property="delegate" destination="m2s-u3-zYY" id="j2L-Zb-5p2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="t8p-Pc-osy"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fme-LJ-Vxi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2670" y="-153"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Vp0-Ka-iSW">
+            <objects>
+                <viewController id="J2i-ds-oFq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZVB-hr-Fr9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beef05" translatesAutoresizingMaskIntoConstraints="NO" id="w0g-ER-SMg">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="49D-yY-4MQ">
+                                <rect key="frame" x="27" y="210" width="236" height="246"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">老饕牛排為順著肋眼牛肉之筋膜所切下的上蓋肉，為肋眼牛排的精華部位，數量稀少，其大理石油脂花紋分布均勻。
+
+料理口感：肉質滑嫩，十分鮮甜且肉汁滿溢。
+建議熟度︰5至7分熟</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yZU-cl-huc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R8h-Az-9Jm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2653.5999999999999" y="600.44977511244383"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="y32-KR-694">
+            <objects>
+                <viewController id="Yfy-Lz-Sd2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GGA-EJ-xcM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="01" translatesAutoresizingMaskIntoConstraints="NO" id="8Gg-iq-1qZ">
+                                <rect key="frame" x="0.0" y="0.0" width="363" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fsZ-ec-Bqb">
+                                <rect key="frame" x="16" y="219" width="352" height="460"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">取自牛隻肋脊部靠近背脊的肌肉，肉質嫩度僅次於菲力，大理石紋的油花多且分布均勻，肋眼牛排通常中間會有一塊明顯的油脂，可說是最受歡迎、也最被人熟知的牛排部位。
+
+料理口感：油脂燒透後散發出牛油香味，此時來吃是最美味的，肉質鮮嫩具有嚼勁。
+建議熟度︰5至7分熟。</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UJf-3Y-vvH"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iX8-Mt-fkF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZVV-G5-UB8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3502" y="555"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="krl-tp-xUP">
+            <objects>
+                <viewController id="0Oz-GZ-3Oy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QRv-6G-K2F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beef07" translatesAutoresizingMaskIntoConstraints="NO" id="WDk-fP-ZZc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="683"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4Bo-nG-rEf">
+                                <rect key="frame" x="48" y="166" width="311" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">被稱為紅屋牛排，取自牛隻的前腰脊部位，將丁骨牛排中間的丁骨拆開，分別是一片菲力牛排與一片紐約客牛排，這2塊部位的性質差異大，菲力牛排屬於精瘦鮮嫩，而紐約牛排則具嚼勁及油花，丁骨牛排恰好同時滿足2種需求，其分量通常較大。
+
+料理口感：擁有2種不同特色，包括口感鮮嫩以及富有嚼勁。
+建議熟度︰3至5分熟。</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="EMp-U0-m81"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dwq-A7-8ZA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4261.6000000000004" y="554.57271364317842"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FMk-uQ-tco">
+            <objects>
+                <viewController id="aa1-Ka-wgz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yMr-IF-CHD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beef09" translatesAutoresizingMaskIntoConstraints="NO" id="hDO-IA-btP">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GJq-H0-YW0">
+                                <rect key="frame" x="34" y="173" width="325" height="440"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">為牛隻後腰脊部兩側的後腰脊肉，此部位靠近腿部之運動肌肉，所以略有嚼勁，油花較少但分布均勻。沙朗（Sirloin）在美國是指後腰脊肉，但在台灣，「沙朗」一詞通常是指「肋眼牛排（Ribeye steak）」，建議點餐時要先看一下菜單上的英文，是寫Sirloin還是Ribeye，以免點錯。
+
+料理口感：肉質嫩度適中，牛肉風味佳。
+建議熟度︰5至7分熟（不超過7分熟最佳）。</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yPp-rG-b8f"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3u4-jz-lkk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4933.6000000000004" y="559.97001499250382"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2S7-Jp-fWu">
+            <objects>
+                <viewController id="HcJ-3H-Al2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="itQ-06-qzZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beef" translatesAutoresizingMaskIntoConstraints="NO" id="PDm-Xy-6KE">
+                                <rect key="frame" x="0.0" y="339" width="375" height="328"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ufr-Z5-T5n">
+                                <rect key="frame" x="16" y="80" width="343" height="443"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">牛肉是指從牛身上得出的肉，為常見的肉品之一。來源可以是奶牛、公牛、小母牛和閹牛。
+
+牛的肌肉部分可以切成牛排、牛肉塊或牛仔骨，也可以與其他的肉混合做成香腸或血腸。其他部位可食用的還有牛尾、牛肝、牛舌、牛百葉、牛胰腺、牛胸腺、牛心、牛腦、牛腎、牛睪丸、牛鞭；脖仁、匙仁、匙柄、吊龍、吊龍伴、肚埂、胸口朥、五花趾、三花趾等則用於潮汕牛肉火鍋。牛腸也可以吃，不過常用來做香腸衣。牛骨可用做飼料。
+
+閹牛和小母牛肉質相似，但閹牛的脂肪更少。年紀大的母牛和公牛肉質粗硬，常用來做牛絞肉。肉牛一般需要經過育肥，飼以穀物、膳食纖維、蛋白質、維生素和礦物質。
+
+牛肉是世界第三消耗肉品，約占肉製品市場的25%。落後於豬肉（38%）和家禽（30%）。美國、巴西和中國是世界消費牛肉前三的國家。按2009年人年消費來看，阿根廷以64.6千克排名第一，美國為42.1千克，歐洲為11.9千克。
+
+最大的牛肉出口國包括印度、巴西、澳大利亞和美國。牛肉製品對於巴拉圭、阿根廷、愛爾蘭、墨西哥、紐西蘭、尼加拉瓜、烏拉圭的經濟有重要影響。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="02I-Em-Zao"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1vx-El-nkI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1384.8" y="823.53823088455783"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="1hq-9M-9Am">
+            <objects>
+                <tabBarController id="oeb-uL-Anw" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uA0-BL-lfZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bZR-mM-b5A" kind="relationship" relationship="viewControllers" id="wKx-sI-Pf3"/>
+                        <segue destination="brN-Cd-bdR" kind="relationship" relationship="viewControllers" id="Wzc-3E-dlu"/>
+                        <segue destination="bgp-oK-uEj" kind="relationship" relationship="viewControllers" id="M0q-qX-rWX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VyT-NJ-Ixv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-810" y="164"/>
+        </scene>
+        <!--羊-->
+        <scene sceneID="dTx-Hx-Cb3">
+            <objects>
+                <navigationController id="brN-Cd-bdR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="羊" image="lambb" id="uuL-Mx-dng"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="STt-Nx-czb">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="E4c-NX-LNE" kind="relationship" relationship="rootViewController" id="m0U-6D-9sq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R4Y-F0-PfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1697" y="-606"/>
+        </scene>
+        <!--羊-->
+        <scene sceneID="Mdk-nb-Syn">
+            <objects>
+                <viewController id="E4c-NX-LNE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3cI-hi-DYS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lambbig" translatesAutoresizingMaskIntoConstraints="NO" id="e3y-2L-NEH">
+                                <rect key="frame" x="0.0" y="0.0" width="816" height="743"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aiX-od-cDJ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="sJL-oS-PCf">
+                                        <rightBarButtonItems>
+                                            <barButtonItem title="更多羊" id="g83-qH-ekf">
+                                                <connections>
+                                                    <segue destination="ajY-wa-QP6" kind="show" id="Tzg-Mp-ilq"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="詳細的羊" id="Hbs-E2-Wkk">
+                                                <connections>
+                                                    <segue destination="vOd-mf-Z14" kind="show" id="p8J-H5-YZ3"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="我們吃的羊有兩種，山羊和綿羊。山羊和綿羊分屬於兩個屬，但同屬羊族。打個比方，山羊和綿羊之間的關係，和同屬人族的人類同黑猩猩的關係差不多。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aaO-yW-dmc">
+                                <rect key="frame" x="106" y="454" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7lh-uU-7dY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="羊" image="lambb" selectedImage="lambb" id="aen-zk-Fbq"/>
+                    <navigationItem key="navigationItem" title="羊" id="bNh-3j-QMn"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gRz-s3-tY2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-842.39999999999998" y="-584.25787106446785"/>
+        </scene>
+        <!--豬-->
+        <scene sceneID="0le-5X-f1v">
+            <objects>
+                <viewController id="E87-X0-6Xi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VJr-gi-uPz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="porkbig2" translatesAutoresizingMaskIntoConstraints="NO" id="XR0-TF-wkG">
+                                <rect key="frame" x="-234" y="0.0" width="740" height="744"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LuB-5J-REb">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="4Gk-pg-gFT">
+                                        <rightBarButtonItems>
+                                            <barButtonItem title="更多豬" id="JV6-GQ-yMD">
+                                                <connections>
+                                                    <segue destination="4uK-IK-brb" kind="show" id="hWj-3d-Pec"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="詳細的豬" id="GxX-E0-DX7">
+                                                <connections>
+                                                    <segue destination="pkl-Qv-vHP" kind="show" id="L4A-9Z-FSM"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="伊利諾大學的Stanley Curtis教授研究發現，豬不但有偏好的溫度，牠們還學會在冷的時候把暖氣打開，在暖和的時候把暖氣關掉。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HV7-YX-jl3">
+                                <rect key="frame" x="16" y="370" width="257" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="05c-wN-JSV"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="豬" image="porkk" selectedImage="porkk" id="m8f-3o-bPl"/>
+                    <navigationItem key="navigationItem" title="豬" id="z5o-v8-K21"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WvZ-ck-wGI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1140" y="-727.28635682158927"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="emv-53-XWt">
+            <objects>
+                <tableViewController id="4uK-IK-brb" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="i57-r3-hMm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="S7t-lI-28H">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="172" id="scz-7A-YQi">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="172"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="scz-7A-YQi" id="dqc-zu-bZX">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="171.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pork2" translatesAutoresizingMaskIntoConstraints="NO" id="UNi-at-RSn">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="172"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="火腿" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4C8-eJ-bBP">
+                                                    <rect key="frame" x="243" y="60" width="64" height="52"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="qRE-XA-uXx" kind="show" id="xJY-Uy-cPG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="172" id="U0c-70-MWh">
+                                        <rect key="frame" x="0.0" y="172" width="375" height="172"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U0c-70-MWh" id="cYe-Sk-znR">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="171.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pork3" translatesAutoresizingMaskIntoConstraints="NO" id="ssB-ap-bSx">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="172"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="香腸" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yRP-tS-R3Q">
+                                                    <rect key="frame" x="249" y="60" width="64" height="52"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="EhT-8K-qFY" kind="show" id="Wdx-yK-gt0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="4uK-IK-brb" id="tta-OV-xRh"/>
+                            <outlet property="delegate" destination="4uK-IK-brb" id="63U-Ng-wrX"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OBE-Ul-4Nd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1888.8" y="-786.65667166416802"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="a6H-Fk-cEP">
+            <objects>
+                <viewController id="qRE-XA-uXx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2KS-5P-DN0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pork2" translatesAutoresizingMaskIntoConstraints="NO" id="IN0-Tg-JB1">
+                                <rect key="frame" x="-70" y="0.0" width="606" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="火腿（英語：Ham），是經過鹽漬、煙燻、發酵和乾燥處理的醃製動物後腿，一般用豬後腿。或是以豬、牛肉的肉泥，添加澱粉與食品添加劑，壓製而成的「三明治火腿」。營養成份主要為蛋白質、鐵質及維生素B1。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tHy-z9-M1A">
+                                <rect key="frame" x="80" y="237" width="240" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="oz3-CN-ybU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BId-18-HNS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2592.8000000000002" y="-1478.4107946026988"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SXx-iZ-u4z">
+            <objects>
+                <viewController id="EhT-8K-qFY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jQe-By-iD7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pork3" translatesAutoresizingMaskIntoConstraints="NO" id="5q6-re-rV5">
+                                <rect key="frame" x="-80" y="0.0" width="693" height="692"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XgA-cx-Qzx">
+                                <rect key="frame" x="32" y="110" width="311" height="473"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">香腸是一個非常古老的食物生產和肉食保存技術，指將動物的肉、內臟或凝固的血，攪碎成泥狀，再灌入腸衣製作而成。在中國一些地區，「香腸」專指臘腸。在閩南，廣東地區或台灣，又稱煙腸；由於處理的過程，可能將糯米腸或香腸類的食物稱呼為灌腸。
+
+古時是以動物腸臟製成腸衣，不過現在多數改用多糖纖維素腸衣或人造腸衣以代替用動物腸臟製成的腸衣。但也有香腸是例外，例如有一種雞肉腸是以雞肉碎直接揉成腸狀，過程並不需要使用腸衣。香腸可經由熱煮煙燻以便保存，現代的香腸也大多常含防腐劑、色素及亞硝酸鹽。</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Mv0-WD-yjA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WgK-78-LUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2669.5999999999999" y="-785.75712143928047"/>
+        </scene>
+        <!--豬-->
+        <scene sceneID="A64-0n-nnX">
+            <objects>
+                <navigationController id="bgp-oK-uEj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="豬" image="porkk" id="ETn-Rn-gki"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JLo-w1-g4i">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="E87-X0-6Xi" kind="relationship" relationship="rootViewController" id="mPJ-II-hac"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GkA-o8-AkN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="201" y="-655"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ptl-bd-DmF">
+            <objects>
+                <viewController id="vOd-mf-Z14" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z3q-Sw-0Zy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lambbig2" translatesAutoresizingMaskIntoConstraints="NO" id="V8w-eD-oKk">
+                                <rect key="frame" x="-300" y="20" width="1031" height="693"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NcL-5g-ijd">
+                                <rect key="frame" x="28" y="104" width="331" height="495"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">羊肉是指從羊身上得出的肉，古時稱為羖肉、羝肉、羯肉，為全世界普遍的肉品之一。小於一歲的羊稱為羔羊，其肉稱為羔羊肉。羊肉肉質與牛肉相似，但肉味較濃。羊肉較豬肉的肉質要細嫩，較豬肉和牛肉的脂肪、膽固醇含量少，然而由於市售羊肉多無部位之分，餐廳為減少成本而刻意選取肥肉較多的部位販售，因此在外用餐時，食用羊肉所攝取的脂肪往往反較食用牛肉或豬肉為高。由於羊肉有一股膻味，故被一部分人所冷落。羊肉一般以現購現烹為宜，如暫時吃不了的，可用少許鹽醃製2天，即可保存10天左右。
+
+羊肉性溫熱，常吃容易上火。因此，吃羊肉時可以搭配一些涼性蔬菜。既能起到清涼、解毒、去火的作用，又能達到羊肉的補益功效。孟詵曰：「河西羊最佳，河東羊亦好。」
+
+《清異錄》：「馮翊產羊，膏嫩第一，言飲食者推馮翊白沙龍。」《清異錄》又載，武后喜歡吃冷羊肉，特賜張昌宗冷羊肉，並附札稱：「珍郎殺身以奉國。」。
+
+羊肉有山羊肉、野羊肉、綿羊肉。
+
+在中國的甘肅慶陽和蘇州的藏書等地，都出產優質的羊肉。</mutableString>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="W7V-N5-HFz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zjw-Sj-koo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1663.2" y="-1290.4047976011996"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="lQg-6Y-T8C">
+            <objects>
+                <tableViewController id="ajY-wa-QP6" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rTe-ZW-jqg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="cvZ-Pe-b23">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="167" id="NPx-ej-HmX">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NPx-ej-HmX" id="Hzk-51-xIt">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="166.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lamb1" translatesAutoresizingMaskIntoConstraints="NO" id="JNl-FP-ceZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="羊小排" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="35e-of-olc">
+                                                    <rect key="frame" x="267" y="64" width="74" height="39"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ahF-u7-Yyi" kind="show" id="I0W-tP-20l"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="167" id="USG-rk-sYz">
+                                        <rect key="frame" x="0.0" y="167" width="375" height="167"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="USG-rk-sYz" id="Z0r-Br-56R">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="166.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lamb2" translatesAutoresizingMaskIntoConstraints="NO" id="a7s-kD-iRf">
+                                                    <rect key="frame" x="-7" y="0.0" width="388" height="167"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="羊肉湯" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qv1-ul-ZJu">
+                                                    <rect key="frame" x="273" y="56" width="74" height="39"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="DRR-cN-Ahr" kind="show" id="5yJ-W0-Hyr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="ajY-wa-QP6" id="Rxe-fC-zTw"/>
+                            <outlet property="delegate" destination="ajY-wa-QP6" id="Mva-3b-SOV"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OVB-CW-e6T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-879.20000000000005" y="-1293.1034482758621"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="u8U-Ag-PJv">
+            <objects>
+                <viewController id="ahF-u7-Yyi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rbt-AB-0uh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lamb1" translatesAutoresizingMaskIntoConstraints="NO" id="ySV-vi-8Oa">
+                                <rect key="frame" x="0.0" y="11" width="375" height="656"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SfM-aU-PcB">
+                                <rect key="frame" x="51" y="135" width="292" height="397"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">烤羊小排跟烤牛排的手法差不多，都是先用大火將肉排煎至表面定型、鎖住肉汁，然後再放進烤箱以180度烤15分鐘熟成。首先將羊小排解凍成室溫，然後表面抹上橄欖油、海鹽、黑胡椒粒，醃個幾分鐘之後，就可以放進平底鍋開始煎。煎的時候要以高溫將羊小排表面煎至金黃色定型，才能將肉汁鎖在裡面，紅酒可以更增添紅肉的風味，所以在煎的時候也可以嗆入一些紅酒，讓肉質更美味。煎好的羊小排起鍋後再放進烤箱以180度烤15分鐘熟成即可。</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="MVk-Fo-Mh8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F87-nh-wT2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-176.80000000000001" y="-1293.1034482758621"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="keI-th-zgp">
+            <objects>
+                <viewController id="DRR-cN-Ahr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OC4-xv-mrO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lamb2" translatesAutoresizingMaskIntoConstraints="NO" id="VHF-I6-cIO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VUo-1f-ROV">
+                                <rect key="frame" x="79" y="61" width="240" height="545"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">1、老薑切成片。
+
+2、冷水、米酒1碗、薑片（1塊的量）與羊肉一起煮滾（即熄火）汆燙後將水倒掉，再用冷水沖去血水，以去除腥味。
+
+3、另起一鍋水（約2000CC），放入羊肉、米酒1罐、薑片（已過煮的可再利用同煮），用小火燉煮約3個小時後，即可嚐到鮮美而又無腥味的羊肉了。
+
+4、這一道「清燉羊肉湯」是以最簡單的食材，再以最簡單的烹煮方法，燉出最原汁原味的冬天養生佳餚。</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7wz-WI-hPf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0AN-6p-ay2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="552.79999999999995" y="-1378.56071964018"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="63L-Aj-El0">
+            <objects>
+                <viewController id="pkl-Qv-vHP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E1T-1d-1Yn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="porkbig" translatesAutoresizingMaskIntoConstraints="NO" id="Xqe-qI-cTx">
+                                <rect key="frame" x="75" y="-28" width="744" height="695"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5mT-rk-PIH">
+                                <rect key="frame" x="16" y="149" width="343" height="561"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">豬肉是從家豬身上取得的肉。證據可以追溯到公元前5000年的豬畜牧業，它是全世界最常吃的肉[1]。豬肉可以有兩種吃法，一種是吃新鮮的熟食、另一種是將豬肉加工保存後食用。固化可以延長豬肉產品的保質期。
+
+豬肉的相關加工品有火腿、臘肉、肉乾、培根、和香腸。豬肉是東亞和東南亞最受歡迎的肉類，在西方世界也是很常見的。由於它的脂肪含量和質地，在亞洲中被高度重視。其實除了鮮肉外，豬肉還大量被加工製作各式香腸、火腿、培根、醃肉、燻肉、肉罐頭、寵物食品。加工用的豬肉，甚至比鮮肉還多。
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="lrs-iV-uOi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="phF-kc-QCf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1544.8" y="-1480.2098950524739"/>
+        </scene>
+        <!--牛-->
+        <scene sceneID="G3h-yI-Sjb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bZR-mM-b5A" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="牛" image="beeff" selectedImage="beeff" id="Etf-Fx-zHE"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BA8-AS-Q37">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FQU-Dc-vkn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xzi-V2-m4X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200.80000000000001" y="164.16791604197903"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="osh-ql-CAZ">
+            <objects>
+                <viewController id="Bg4-R9-17I" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dIA-qc-Zhj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="foods" translatesAutoresizingMaskIntoConstraints="NO" id="y9W-2w-wGV">
+                                <rect key="frame" x="77" y="336" width="221" height="331"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJ5-de-IlK">
+                                <rect key="frame" x="171" y="251" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="start"/>
+                                <connections>
+                                    <segue destination="oeb-uL-Anw" kind="show" id="6Qm-0G-jFX"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="動物小百科" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9NO-2n-jWU">
+                                <rect key="frame" x="105" y="147" width="164" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ZiO-44-KUI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RPT-gj-7sk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WkN-EU-79e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653.60000000000002" y="823.53823088455783"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="01" width="311" height="162"/>
+        <image name="beef" width="259" height="194"/>
+        <image name="beef 06" width="880" height="440"/>
+        <image name="beef05" width="275" height="183"/>
+        <image name="beef07" width="660" height="380"/>
+        <image name="beef08" width="585" height="438.75"/>
+        <image name="beef09" width="311" height="162"/>
+        <image name="beef1" width="1040" height="1040"/>
+        <image name="beefbig" width="1280" height="720"/>
+        <image name="beeff" width="43" height="31"/>
+        <image name="foods" width="194" height="259"/>
+        <image name="lamb1" width="79.08197021484375" height="65.154098510742188"/>
+        <image name="lamb2" width="273" height="185"/>
+        <image name="lambb" width="42" height="41"/>
+        <image name="lambbig" width="1920" height="1379"/>
+        <image name="lambbig2" width="2048" height="1536"/>
+        <image name="pork2" width="297" height="170"/>
+        <image name="pork3" width="259" height="194"/>
+        <image name="porkbig" width="2703" height="1597"/>
+        <image name="porkbig2" width="225" height="224"/>
+        <image name="porkk" width="40" height="34"/>
+    </resources>
 </document>
